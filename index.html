@@ -2,94 +2,99 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <title>Portfolio Website</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>College Event Registration</title>
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .hero {
+      background-color: #10b9a8;
+      color: white;
+      padding: 60px 0;
+      text-align: center;
+    }
+    .info {
+      background-color: #0a2941;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    .cards-section {
+      background-color: #9ea6b2;
+      padding: 40px 20px;
+    }
+    .footer {
+      background-color: #222;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    .profile-img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 5px solid white;
+      margin-bottom: 20px;
+    }
+  </style>
 </head>
 <body>
 
-  <!-- Navbar -->
-  <nav class="navbar navbar-dark bg-dark mb-4">
-    <div class="container-fluid">
-      <span class="navbar-brand mb-0 h1">College Events</span>
-    </div>
-  </nav>
+<!-- Task 3.1 Section -->
+<div class="hero">
+  <h2>Who Am I?</h2>
+  <img src="college girl.jpg" alt="Profile" class="profile-img">
+  <h4>I'm Python Full Stack Developer</h4>
+</div>
 
-  <!-- Cards -->
-  <div class="container">
-    <div class="row justify-content-center">
-      
-      <!-- Tech Fest Card -->
+<div class="info">
+  <h3>What Am I?</h3>
+  <p>
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci sint iusto consectetur quod voluptates recusandae, deserunt molestias cupiditate, unde maiores fugiat autem excepturi voluptatem, molestiae laudantium inventore dolorum rerum voluptate!
+  </p>
+  <a href="#" class="btn btn-danger">Read More..</a>
+</div>
+
+<!-- Task 3.2 Section -->
+<div class="cards-section text-center">
+  <h2>Where to Find Me?</h2>
+  <div class="container mt-4">
+    <div class="row g-4">
       <div class="col-md-4">
-        <div class="card mb-4">
+        <div class="card">
+          <img src="dance.jpg" class="card-img-top" alt="Dancer">
           <div class="card-body">
-            <h5 class="card-title">Tech Fest 2025</h5>
-            <p class="card-text">A grand technology event showcasing student innovations and workshops.</p>
-            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#registerModal">Register</button>
+            <p class="card-text">Dancer ipsum dolor sit amet, consectetur adipiscing elit...</p>
           </div>
         </div>
       </div>
-
-      <!-- Cultural Night Card -->
       <div class="col-md-4">
-        <div class="card mb-4">
+        <div class="card">
+          <img src="pexels-lanius-2118046.jpg" class="card-img-top" alt="Guitarist">
           <div class="card-body">
-            <h5 class="card-title">Cultural Night</h5>
-            <p class="card-text">A colorful celebration of talent, music, and drama by our students.</p>
-            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#registerModal">Register</button>
+            <p class="card-text">Guitar Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
           </div>
         </div>
       </div>
-
-    </div>
-  </div>
-
-  <!-- Footer -->
-  <footer class="text-center py-3 bg-light">
-    © 2025 College Event Registration
-  </footer>
-
-  <!-- Modal -->
-  <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <form>
-          <div class="modal-header">
-            <h5 class="modal-title" id="registerModalLabel">Event Registration</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="pexels-vlada-karpovich-6114996.jpg" class="card-img-top" alt="Chess Player">
+          <div class="card-body">
+            <p class="card-text">Chess gamer Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
           </div>
-
-          <div class="modal-body">
-            <div class="mb-3">
-              <label for="fullName" class="form-label">Full Name</label>
-              <input type="text" class="form-control" id="fullName" required>
-            </div>
-            <div class="mb-3">
-              <label for="emailAddress" class="form-label">Email address</label>
-              <input type="email" class="form-control" id="emailAddress" required>
-            </div>
-            <div class="mb-3">
-              <label for="eventName" class="form-label">Event Name</label>
-              <select class="form-select" id="eventName" required>
-                <option selected disabled>Choose...</option>
-                <option>Tech Fest 2025</option>
-                <option>Cultural Night</option>
-              </select>
-            </div>
-          </div>
-
-          <div class="modal-footer">
-            <button type="submit" class="btn btn-success">Submit</button>
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-          </div>
-        </form>
+        </div>
       </div>
     </div>
   </div>
+</div>
 
-  <!-- Bootstrap JS (with Popper) -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Footer -->
+<div class="footer">
+  <p>This Website is Developed By @ <a href="#" class="text-info">vidyanvitha</a></p>
+</div>
 
+<!-- Bootstrap JS CDN -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
