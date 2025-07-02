@@ -1,100 +1,55 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Portfolio Website</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- Bootstrap CSS CDN -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <style>
-    .hero {
-      background-color: #10b9a8;
-      color: white;
-      padding: 60px 0;
-      text-align: center;
-    }
-    .info {
-      background-color: #0a2941;
-      color: white;
-      padding: 40px 20px;
-      text-align: center;
-    }
-    .cards-section {
-      background-color: #9ea6b2;
-      padding: 40px 20px;
-    }
-    .footer {
-      background-color: #222;
-      color: white;
-      text-align: center;
-      padding: 20px;
-    }
-    .profile-img {
-      width: 200px;
-      height: 200px;
-      object-fit: cover;
-      border-radius: 50%;
-      border: 5px solid white;
-      margin-bottom: 20px;
-    }
-  </style>
-</head>
-<body>
-
-<!-- Task 3.1 Section -->
-<div class="hero">
-  <h2>Who Am I?</h2>
-  <img src="college girl.jpg" alt="Profile" class="profile-img">
-  <h4>I'm Python Full Stack Developer</h4>
-</div>
-
-<div class="info">
-  <h3>What Am I?</h3>
-  <p>
-    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci sint iusto consectetur quod voluptates recusandae, deserunt molestias cupiditate, unde maiores fugiat autem excepturi voluptatem, molestiae laudantium inventore dolorum rerum voluptate!
-  </p>
-  <a href="#" class="btn btn-danger">Read More..</a>
-</div>
-
-<!-- Task 3.2 Section -->
-<div class="cards-section text-center">
-  <h2>Where to Find Me?</h2>
-  <div class="container mt-4">
-    <div class="row g-4">
-      <div class="col-md-4">
-        <div class="card">
-          <img src="dance.jpg" class="card-img-top" alt="Dancer">
-          <div class="card-body">
-            <p class="card-text">Dancer ipsum dolor sit amet, consectetur adipiscing elit...</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="card">
-          <img src="pexels-lanius-2118046.jpg" class="card-img-top" alt="Guitarist">
-          <div class="card-body">
-            <p class="card-text">Guitar Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="card">
-          <img src="pexels-vlada-karpovich-6114996.jpg" class="card-img-top" alt="Chess Player">
-          <div class="card-body">
-            <p class="card-text">Chess gamer Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-          </div>
-        </div>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  </head>
+  <body>
+    <img src="College_LOGO 1.png.crdownload" alt="">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link active" aria-current="page" href="#">Home</a>
+        <a class="nav-link" href="#">Features</a>
+        <a class="nav-link" href="#">Pricing</a>
+        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
       </div>
     </div>
   </div>
+</nav>
+    <div id="carouselExampleIndicators" class="carousel slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" class="active" aria-current="true" aria-label="Slide 1"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="pexels-olly-3808181.jpg" class="d-block w-100" alt="Slide 1">
+    </div>
+    <div class="carousel-item">
+      <img src="pexels-george-pak-797234.jpg" class="d-block w-100" alt="Slide 2">
+    </div>
+    <div class="carousel-item">
+      <img src="pexels-yankrukov-8199602.jpg" class="d-block w-100" alt="Slide 3">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
 </div>
-
-<!-- Footer -->
-<div class="footer">
-  <p>This Website is Developed By @ <a href="#" class="text-info">vidyanvitha</a></p>
-</div>
-
-<!-- Bootstrap JS CDN -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+  </body>
 </html>
